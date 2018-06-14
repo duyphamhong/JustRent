@@ -9,4 +9,8 @@
     <ProjectReference Include="..\SV.DataAccess\SV.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DataDto\" />
+  </ItemGroup>
+
 </Project>

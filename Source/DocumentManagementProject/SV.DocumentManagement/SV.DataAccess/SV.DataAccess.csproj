@@ -15,4 +15,9 @@
     <ProjectReference Include="..\SV.Common\SV.Common.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DataObject\" />
+    <Folder Include="Messages\" />
+  </ItemGroup>
+
 </Project>
