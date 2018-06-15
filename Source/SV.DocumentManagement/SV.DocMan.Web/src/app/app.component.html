@@ -1,0 +1,15 @@
+<!--<h1>{{title}}</h1>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+<router-outlet></router-outlet>-->
+
+  <!-- Main content -->
+<router-outlet>
+  <div class="wrapper">
+  </div>
+</router-outlet>
+
+<div *ngIf="isLoading()" class="loader">Loading...</div>
+

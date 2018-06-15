@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Angular5NetCoreAPI", "Angular5NetCoreAPI\Angular5NetCoreAPI.csproj", "{AE1FA7C9-5072-47C0-A1D5-61637066B6CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SV.BusinessLogic", "SV.BusinessLogic\SV.BusinessLogic.csproj", "{01DCD139-6BDA-488B-910E-12BAFA2C3909}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SV.DataAccess", "SV.DataAccess\SV.DataAccess.csproj", "{1314EF06-108A-4EE7-8860-7DEC0013C30D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SV.Common", "SV.Common\SV.Common.csproj", "{39428F80-1484-4BF8-A27E-99E9784749D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SV.DocMan.WebApi", "SV.DocMan.WebApi\SV.DocMan.WebApi.csproj", "{781361A5-1C16-4464-A6C3-0705230096E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SV.DocMan.Web", "SV.DocMan.Web\SV.DocMan.Web.csproj", "{FE1E525A-E817-47C0-9736-7C75924A374E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{2736BE77-B362-4087-8B4C-66F07669601D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE1FA7C9-5072-47C0-A1D5-61637066B6CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE1FA7C9-5072-47C0-A1D5-61637066B6CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE1FA7C9-5072-47C0-A1D5-61637066B6CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE1FA7C9-5072-47C0-A1D5-61637066B6CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01DCD139-6BDA-488B-910E-12BAFA2C3909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01DCD139-6BDA-488B-910E-12BAFA2C3909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01DCD139-6BDA-488B-910E-12BAFA2C3909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01DCD139-6BDA-488B-910E-12BAFA2C3909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1314EF06-108A-4EE7-8860-7DEC0013C30D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1314EF06-108A-4EE7-8860-7DEC0013C30D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1314EF06-108A-4EE7-8860-7DEC0013C30D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1314EF06-108A-4EE7-8860-7DEC0013C30D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39428F80-1484-4BF8-A27E-99E9784749D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39428F80-1484-4BF8-A27E-99E9784749D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39428F80-1484-4BF8-A27E-99E9784749D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39428F80-1484-4BF8-A27E-99E9784749D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{781361A5-1C16-4464-A6C3-0705230096E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781361A5-1C16-4464-A6C3-0705230096E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781361A5-1C16-4464-A6C3-0705230096E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781361A5-1C16-4464-A6C3-0705230096E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE1E525A-E817-47C0-9736-7C75924A374E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE1E525A-E817-47C0-9736-7C75924A374E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE1E525A-E817-47C0-9736-7C75924A374E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE1E525A-E817-47C0-9736-7C75924A374E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2736BE77-B362-4087-8B4C-66F07669601D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2736BE77-B362-4087-8B4C-66F07669601D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2736BE77-B362-4087-8B4C-66F07669601D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2736BE77-B362-4087-8B4C-66F07669601D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {725CBE08-78E1-40A0-B1EB-CA985B726204}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\bin\Release\netcoreapp2.1\SV.DocMan.Web.deps.json
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\bin\Release\netcoreapp2.1\SV.DocMan.Web.runtimeconfig.json
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\bin\Release\netcoreapp2.1\SV.DocMan.Web.runtimeconfig.dev.json
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\bin\Release\netcoreapp2.1\SV.DocMan.Web.dll
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\bin\Release\netcoreapp2.1\SV.DocMan.Web.pdb
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\obj\Release\netcoreapp2.1\SV.DocMan.Web.csprojAssemblyReference.cache
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\obj\Release\netcoreapp2.1\SV.DocMan.Web.csproj.CoreCompileInputs.cache
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\obj\Release\netcoreapp2.1\SV.DocMan.Web.RazorAssemblyInfo.cache
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\obj\Release\netcoreapp2.1\SV.DocMan.Web.RazorAssemblyInfo.cs
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\obj\Release\netcoreapp2.1\SV.DocMan.Web.AssemblyInfoInputs.cache
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\obj\Release\netcoreapp2.1\SV.DocMan.Web.AssemblyInfo.cs
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\obj\Release\netcoreapp2.1\SV.DocMan.Web.RazorTargetAssemblyInfo.cache
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\obj\Release\netcoreapp2.1\SV.DocMan.Web.dll
+E:\Project\DocMan\DocMan\Source\NetCoreAngular5\Angular5NetCoreAPI\SV.DocMan.Web\obj\Release\netcoreapp2.1\SV.DocMan.Web.pdb
