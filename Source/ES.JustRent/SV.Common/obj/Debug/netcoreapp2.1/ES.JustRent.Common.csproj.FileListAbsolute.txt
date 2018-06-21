@@ -1,0 +1,17 @@
+E:\TRO\JustRent\Source\SV.DocumentManagement\SV.Common\bin\Debug\netcoreapp2.1\ES.JustRent.Common.deps.json
+E:\TRO\JustRent\Source\SV.DocumentManagement\SV.Common\bin\Debug\netcoreapp2.1\ES.JustRent.Common.dll
+E:\TRO\JustRent\Source\SV.DocumentManagement\SV.Common\bin\Debug\netcoreapp2.1\ES.JustRent.Common.pdb
+E:\TRO\JustRent\Source\SV.DocumentManagement\SV.Common\obj\Debug\netcoreapp2.1\ES.JustRent.Common.csproj.CoreCompileInputs.cache
+E:\TRO\JustRent\Source\SV.DocumentManagement\SV.Common\obj\Debug\netcoreapp2.1\ES.JustRent.Common.AssemblyInfoInputs.cache
+E:\TRO\JustRent\Source\SV.DocumentManagement\SV.Common\obj\Debug\netcoreapp2.1\ES.JustRent.Common.AssemblyInfo.cs
+E:\TRO\JustRent\Source\SV.DocumentManagement\SV.Common\obj\Debug\netcoreapp2.1\ES.JustRent.Common.dll
+E:\TRO\JustRent\Source\SV.DocumentManagement\SV.Common\obj\Debug\netcoreapp2.1\ES.JustRent.Common.pdb
+E:\TRO\JustRent\Source\ES.JustRent\SV.Common\bin\Debug\netcoreapp2.1\ES.JustRent.Common.deps.json
+E:\TRO\JustRent\Source\ES.JustRent\SV.Common\bin\Debug\netcoreapp2.1\ES.JustRent.Common.dll
+E:\TRO\JustRent\Source\ES.JustRent\SV.Common\bin\Debug\netcoreapp2.1\ES.JustRent.Common.pdb
+E:\TRO\JustRent\Source\ES.JustRent\SV.Common\obj\Debug\netcoreapp2.1\ES.JustRent.Common.csprojAssemblyReference.cache
+E:\TRO\JustRent\Source\ES.JustRent\SV.Common\obj\Debug\netcoreapp2.1\ES.JustRent.Common.csproj.CoreCompileInputs.cache
+E:\TRO\JustRent\Source\ES.JustRent\SV.Common\obj\Debug\netcoreapp2.1\ES.JustRent.Common.AssemblyInfoInputs.cache
+E:\TRO\JustRent\Source\ES.JustRent\SV.Common\obj\Debug\netcoreapp2.1\ES.JustRent.Common.AssemblyInfo.cs
+E:\TRO\JustRent\Source\ES.JustRent\SV.Common\obj\Debug\netcoreapp2.1\ES.JustRent.Common.dll
+E:\TRO\JustRent\Source\ES.JustRent\SV.Common\obj\Debug\netcoreapp2.1\ES.JustRent.Common.pdb
