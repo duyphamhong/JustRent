@@ -23,6 +23,12 @@ import { OrgnizationComponent } from './components/orgnization/orgnization.compo
     AppmenuComponent,
     AppsettingComponent,
     OrgnizationComponent
+  ],
+  exports: [
+    CommonModule,
+    AppheaderComponent,
+    AppfooterComponent,
+    AppmenuComponent
   ]
 })
 export class SystemManagementModule { }

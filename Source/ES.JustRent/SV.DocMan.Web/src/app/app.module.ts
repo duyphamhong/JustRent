@@ -7,15 +7,14 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { ResponseInterceptor } from './http-interceptor/responseInterceptor';
 import { LoginsModule } from './modules/logins/logins.module';
+import { RoomsForRentModule } from './modules/rooms-for-rent/rooms-for-rent.module';
 import { SystemManagementModule } from './modules/system-management/system-management.module';
 import { CustomHttpInterceptor } from './http-interceptor/customHttpInterceptor';
 import { HttpEventLoadingInterceptor, HTTPStatus } from './http-interceptor/httpEventLoadingInterceptor';
-
 const RxJS_Services = [HttpEventLoadingInterceptor, HTTPStatus];
 
 @NgModule({
@@ -33,7 +32,8 @@ const RxJS_Services = [HttpEventLoadingInterceptor, HTTPStatus];
     BrowserAnimationsModule,
     MatSnackBarModule,
     LoginsModule,
-    SystemManagementModule
+    SystemManagementModule,
+    RoomsForRentModule
   ],
   providers: [
     ...RxJS_Services,
