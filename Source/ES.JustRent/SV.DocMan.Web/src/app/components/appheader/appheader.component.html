@@ -1,4 +1,4 @@
-<header class="h-100">
+<header class="h-100 app-header">
   <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="false">
     <logo>
       <a class="logo navbar-brand" href="#">
@@ -12,11 +12,27 @@
             <span class="sr-only">(current)</span>
           </a>
         </li>
-        <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link">Link</a>
+      </ul>
+      <ul class="navbar-nav nav-flex-icons ml-auto ie-double-nav">
+        <li class="nav-item waves-light" >
+          <a class="nav-link">Sign up</a>
         </li>
-        <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link">Profile</a>
+        <li class="nav-item waves-light" >
+          <a class="nav-link">Log in</a>
+        </li>
+        <li class="nav-item waves-light">
+          <button type="button" class="btn btn-outline-success" mdbWavesEffect style="margin-top: -3px;">
+            List your place for free
+          </button>
+        </li>
+        <li class="nav-item dropdown btn-group" dropdown>
+          <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+              EN
+          </a>
+          <div class="dropdown-menu dropdown-primary dropdown-menu-right" role="menu">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Vietnamese</a>
+          </div>
         </li>
       </ul>
     </links>
@@ -26,12 +42,17 @@
     <div class="full-bg-img">
       <div class="mask rgba-purple-light flex-center">
         <div class="container text-center white-text wow fadeInUp">
-          <h2>This Navbar is fixed and transparent</h2>
+          <h1 class="mt-5">Safely book your new home abroad</h1>
           <br>
-          <h5>It will always stay visible on the top, even when you scroll down</h5>
-          <p>Navbar's background will switch from transparent to solid color while scrolling down</p>
-          <br>
-          <p>Full page intro with background image will be always displayed in full screen mode, regardless of device </p>
+          <div class="row">
+            <div class="col-md-10 offset-md-2">
+              <form class="form-inline md-form mr-auto mb-4">
+                <input class="form-control mr-sm-2 col-md-8" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn aqua-gradient btn-rounded btn-sm my-0 waves-light" mdbWavesEffect type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
