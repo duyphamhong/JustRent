@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
@@ -13,6 +13,7 @@ import { ResponseInterceptor } from './http-interceptor/responseInterceptor';
 import { LoginsModule } from './modules/logins/logins.module';
 import { RoomsForRentModule } from './modules/rooms-for-rent/rooms-for-rent.module';
 import { SystemManagementModule } from './modules/system-management/system-management.module';
+import { HomeModule } from './modules/home/home.module';
 import { CustomHttpInterceptor } from './http-interceptor/customHttpInterceptor';
 import { HttpEventLoadingInterceptor, HTTPStatus } from './http-interceptor/httpEventLoadingInterceptor';
 const RxJS_Services = [HttpEventLoadingInterceptor, HTTPStatus];
@@ -33,7 +34,8 @@ const RxJS_Services = [HttpEventLoadingInterceptor, HTTPStatus];
     MatSnackBarModule,
     LoginsModule,
     SystemManagementModule,
-    RoomsForRentModule
+    RoomsForRentModule,
+    HomeModule
   ],
   providers: [
     ...RxJS_Services,

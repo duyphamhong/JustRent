@@ -4,7 +4,7 @@ import { LoadingIndicatorService } from './commons/loading-indicator.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   constructor(private loadingService: LoadingIndicatorService) { }

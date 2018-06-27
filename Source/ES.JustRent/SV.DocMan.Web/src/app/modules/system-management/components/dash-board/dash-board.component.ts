@@ -5,7 +5,7 @@ import { PhoneContact } from '../../../../models/phoneContact';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dash-board.component.html',
-  styleUrls: ['./dash-board.component.css']
+  styleUrls: ['./dash-board.component.scss']
 })
 export class DashboardComponent implements OnInit {
   contacts: PhoneContact[] = [];
