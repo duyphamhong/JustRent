@@ -1,0 +1,76 @@
+// body {
+//   margin: 30px 0px;
+// }
+
+// .navbar .navbar-default {
+//   background: none;
+//   border: none !important;
+// }
+
+// .navbar-default .navbar-nav>li.dropdown:hover>a,
+// .navbar-default .navbar-nav>li.dropdown:hover>a:hover,
+// .navbar-default .navbar-nav>li.dropdown:hover>a:focus {
+//   /* background-color: rgb(231, 231, 231); */
+//   color: rgb(85, 85, 85);
+// }
+
+// @media (min-width: 768px) {
+//   .navbar-nav>li>a {
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//   }
+// }
+
+// li.dropdown:hover>.dropdown-menu {
+//   display: block;
+//   /* background-color: #fff; */
+//   border: 1px solid #c9d7df;
+//   border-top: 3px solid #00af9e;
+//   border-bottom-right-radius: .2rem;
+//   border-bottom-left-radius: .2rem;
+// }
+
+// .dropdown-menu>li>a:hover {
+//     color: #00af9e;
+//     background-color: rgba(239,242,244,.5);
+//     fill: #00af9e;
+//     stroke: #00af9e;
+// }
+
+// .btn {
+//   background-color: white;
+//   color: black;
+//   padding: 4px;
+//   font-size: 13px;
+//   cursor: pointer;
+// }
+
+// .success {
+//   border-color: #4CAF50;
+//   color: green;
+// }
+
+// .success:hover {
+//   background-color: #4CAF50;
+//   color: white;
+// }
+
+.view {
+  background: url("https://mdbootstrap.com/img/Photos/Others/img (40).jpg")no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.top-nav-collapse {
+  background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+      background-color: #4285F4;
+  }
+}

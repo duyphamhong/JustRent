@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SystemManagementRoutingModule } from './system-management-routing.module';
@@ -9,11 +9,12 @@ import { AppfooterComponent } from '../../components/appfooter/appfooter.compone
 import { AppmenuComponent } from '../../components/appmenu/appmenu.component';
 import { AppsettingComponent } from '../../components/appsetting/appsetting.component';
 import { OrgnizationComponent } from './components/orgnization/orgnization.component';
-
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 @NgModule({
   imports: [
     CommonModule,
-    SystemManagementRoutingModule
+    SystemManagementRoutingModule,
+    MDBBootstrapModule.forRoot()
   ],
   declarations: [
     DashboardComponent,
@@ -28,7 +29,9 @@ import { OrgnizationComponent } from './components/orgnization/orgnization.compo
     CommonModule,
     AppheaderComponent,
     AppfooterComponent,
-    AppmenuComponent
-  ]
+    AppmenuComponent,
+    MDBBootstrapModule
+  ],
+  schemas: [ NO_ERRORS_SCHEMA ]
 })
 export class SystemManagementModule { }

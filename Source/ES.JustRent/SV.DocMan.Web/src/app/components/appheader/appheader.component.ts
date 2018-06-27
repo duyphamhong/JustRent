@@ -5,16 +5,21 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-appheader',
   templateUrl: './appheader.component.html',
-  styleUrls: ['./appheader.component.css']
+  styleUrls: ['./appheader.component.scss']
 })
 export class AppheaderComponent implements OnInit {
 
   userName: string;
-
+  optionsSelect: Array<any>;
   constructor(private storageService: UserInfoStorageService, private _router: Router) { }
-
+  
   ngOnInit() {
     this.userName  = this.storageService.getUserName();
+    this.optionsSelect = [
+      { value: '1', label: 'Option 1' },
+      { value: '2', label: 'Option 2' },
+      { value: '3', label: 'Option 3' },
+  ];
   }
 
   signOut(): void {
