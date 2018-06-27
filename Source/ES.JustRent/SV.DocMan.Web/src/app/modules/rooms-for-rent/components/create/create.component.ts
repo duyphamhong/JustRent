@@ -6,6 +6,15 @@ import { } from '@angular/material/icon/';
   styleUrls: ['./create.component.css']
 })
 export class CreateComponent implements OnInit {
+  dateOptionsSelect= [
+    { value: '1', label: 'Today', selected: true },
+    { value: '2', label: 'Yesterday' },
+    { value: '3', label: 'Last 7 days' },
+    { value: '4', label: 'Last 30 days' },
+    { value: '5', label: 'Last week' },
+    { value: '6', label: 'Last month' }
+    ];
+    selectedValue = '1';
   public Listyourplace: any = 
     {
       "name": "List your place",
@@ -38,7 +47,7 @@ export class CreateComponent implements OnInit {
       value : 1,
       viewValue : "hihi"
     }]
-    public isHidden = true;
+    public isHidden = false;
     public isCreateNewPost = true;
     public filePhoto:any;
     date3: Date;
@@ -46,11 +55,4 @@ export class CreateComponent implements OnInit {
 
   ngOnInit() {
   }
-  uploadPhoto() {
-    document.getElementById('filePhoto').click();
-  }
-  fileChanged(e) {
-    this.filePhoto = e.target.files[0];
-}
-
 }

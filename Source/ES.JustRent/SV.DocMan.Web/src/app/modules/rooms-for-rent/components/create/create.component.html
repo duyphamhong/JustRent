@@ -13,45 +13,44 @@
 </div>
 <div>
 <form class="form-create-post"  *ngIf="isCreateNewPost">
-    <div class="form-group" >
-      <label for="name">What kind of place are you listing? <span class="required">*</span></label>
-      <select class="form-control select-kind" name="Guild">
-          <option value="" selected disabled>Select kind</option>
-          <option *ngFor="let kind of kinds" [value]="kind.value">{{ kind.viewValue }}</option>
-        </select>  
+    <div class="form-group col-md-12" >
+          <label for="name">What kind of place are you listing? <span class="required">*</span></label>
+          <select class="form-control" name="kind" id='kind'>
+            <!-- <option value="" selected disabled>Select kind</option> -->
+            <option *ngFor="let kind of kinds" [value]="kind.value">{{ kind.viewValue }}</option>
+          </select>  
+          <!-- <select class="form-control select-kind">
+              <option value="" selected disabled>Select kind</option>
+              <option *ngFor="let kind of kinds" [value]="kind.value">{{ kind.viewValue }}</option>
+            </select>   -->
     </div>
-
-    <div class="form-group">
-      <label for="alterEgo">What type of property is this? <span class="required">*</span></label>
-      <select class="form-control" name="Guild">
-          <option value="" selected disabled>Select kind</option>
-          <option *ngFor="let kind of kinds" [value]="kind.value">{{ kind.viewValue }}</option>
-        </select>  
+    <div class="form-group col-md-12">
+            <label for="alterEgo">What type of property is this? <span class="required">*</span></label>
+            <mdb-select [(ngModel)]="selectedValue" [options]="dateOptionsSelect" placeholder="Choose time period"></mdb-select>
+         
     </div>
-    <div class="form-group">
-        <label for="name">Your room address (including house number <span class="required">*</span></label>
-        <input type="text" class="form-control" id="name" required>
-      </div>
-      <div class="ui-g-12 ui-md-4">
-          <h3>Icon</h3>
-          <p-calendar [(ngModel)]="date3" [showIcon]="true"></p-calendar>{{date3|date}}
-      </div>
-     
-    <button type="submit" class="btn btn-success">Continue next step</button>
+    <div class="form-group col-md-12">
+            <label for="name">Your room address (including house number <span class="required">*</span></label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+      <div class="form-group">
+        <div class="col-md-6">
+            <label for="date-picker-example">Start Date</label>
+            <input placeholder="Move-in date" type="text" id="date-picker-example" class="form-control datepicker">
+ 
+        </div>
+        <div class="col-md-6">
+            <label for="date-picker-example">End Date</label>
+            <input placeholder="Move-out date" type="text" id="date-picker-example" class="form-control datepicker">
+        </div>
+        </div>
+        <div class="form-group col-md-12">
+            <button type="submit" class="btn btn-success">Continue next step</button>
+        </div>
   </form>
 </div>
-  <div *ngIf="isHidden" class="form-create-detail ">
-    <div class="picture">
-      <span class="span-picture">
-          <button type="submit" class="btn btn-success upload-photo inline-block" (click)="uploadPhoto()"><i class="fa fa-plus"></i> Upload Photo</button>
-          <div class="inline-block">or</div>
-          <button type="submit" class="btn btn-success upload-photo inline-block" (click)="uploadPhoto()"><i class="fa fa-tag"></i> Upload Video</button>
-          <div style=" display: none !important;">
-              <input  type="file" id="filePhoto" accept=".jpg/.png" (change)="handleFileInput($event.target.files)">
-              <input  type="file" id="fileVideo" (change)="handleFileInput($event.target.files)">
-          </div>
-      </span>
-    </div>
+  <div *ngIf="isHidden">
+    <app-create-detail [emp]='isHidden'></app-create-detail>
   </div>
 </div>
 

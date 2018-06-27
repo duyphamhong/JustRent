@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CreateComponent } from './components/create/create.component';
 import { RoomsForRentRoutingModule } from './rooms-for-rent-routing.module';
-import { CreateRoomsForRentDirective } from './components/create/directives/create-rooms-for-rent-directive';
-import { CreateNewPostDirective } from './components/create/directives/create-new-post-directive';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -41,10 +39,14 @@ import {
   MatTooltipModule,
   MatTreeModule
 } from '@angular/material';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { SystemManagementModule } from './../system-management/system-management.module';
+import { CreateDetailComponent } from './components/create-detail/create-detail.component';
 @NgModule({
   imports: [
     CommonModule,
+    MDBBootstrapModule,
     RoomsForRentRoutingModule,
     MatAutocompleteModule,
     MatBadgeModule,
@@ -81,9 +83,12 @@ import { SystemManagementModule } from './../system-management/system-management
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-    SystemManagementModule
+    SystemManagementModule,
+    OwlDateTimeModule, 
+    OwlNativeDateTimeModule
   ],
-  declarations: [CreateComponent,CreateRoomsForRentDirective,CreateNewPostDirective],
-  bootstrap: [CreateComponent]
+  declarations: [CreateComponent, CreateDetailComponent],
+  bootstrap: [CreateComponent],
+  schemas : [NO_ERRORS_SCHEMA]
 })
 export class RoomsForRentModule { }
