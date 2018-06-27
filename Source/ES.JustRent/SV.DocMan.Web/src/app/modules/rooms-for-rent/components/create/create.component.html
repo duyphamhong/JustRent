@@ -1,0 +1,57 @@
+<div>
+  <div>
+    <ol class="menu-create-timeline" >
+    <li [ngClass]="{'listyourplace' : Listyourplace.check == true,
+    'listyourplacetodo' : Listyourplace.check == false}">{{Listyourplace.name}}</li>
+    <li [ngClass]="{'adddetails' : Adddetails.check == true,
+    'adddetailstodo' : Adddetails.check == false}">{{Adddetails.name}}</li>
+    <li [ngClass]="{'verifyyouraccount' : Verifyyouraccount.check == true,
+    'verifyyouraccounttodo' : Verifyyouraccount.check == false}">{{Verifyyouraccount.name}}</li>
+    <li [ngClass]="{'sharepromote' : Sharepromote.check == true,
+    'sharepromotetodo' : Sharepromote.check == false}">{{Sharepromote.name}}</li>
+  </ol>
+</div>
+<div>
+<form class="form-create-post"  *ngIf="isCreateNewPost">
+    <div class="form-group" >
+      <label for="name">What kind of place are you listing? <span class="required">*</span></label>
+      <select class="form-control select-kind" name="Guild">
+          <option value="" selected disabled>Select kind</option>
+          <option *ngFor="let kind of kinds" [value]="kind.value">{{ kind.viewValue }}</option>
+        </select>  
+    </div>
+
+    <div class="form-group">
+      <label for="alterEgo">What type of property is this? <span class="required">*</span></label>
+      <select class="form-control" name="Guild">
+          <option value="" selected disabled>Select kind</option>
+          <option *ngFor="let kind of kinds" [value]="kind.value">{{ kind.viewValue }}</option>
+        </select>  
+    </div>
+    <div class="form-group">
+        <label for="name">Your room address (including house number <span class="required">*</span></label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="ui-g-12 ui-md-4">
+          <h3>Icon</h3>
+          <p-calendar [(ngModel)]="date3" [showIcon]="true"></p-calendar>{{date3|date}}
+      </div>
+     
+    <button type="submit" class="btn btn-success">Continue next step</button>
+  </form>
+</div>
+  <div *ngIf="isHidden" class="form-create-detail ">
+    <div class="picture">
+      <span class="span-picture">
+          <button type="submit" class="btn btn-success upload-photo inline-block" (click)="uploadPhoto()"><i class="fa fa-plus"></i> Upload Photo</button>
+          <div class="inline-block">or</div>
+          <button type="submit" class="btn btn-success upload-photo inline-block" (click)="uploadPhoto()"><i class="fa fa-tag"></i> Upload Video</button>
+          <div style=" display: none !important;">
+              <input  type="file" id="filePhoto" accept=".jpg/.png" (change)="handleFileInput($event.target.files)">
+              <input  type="file" id="fileVideo" (change)="handleFileInput($event.target.files)">
+          </div>
+      </span>
+    </div>
+  </div>
+</div>
+

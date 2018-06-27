@@ -1,0 +1,160 @@
+body {
+  background-color: #95a5b1;
+}
+ol.menu-create-timeline {
+  text-align: center;
+  list-style: none;
+  max-width: 120rem;
+  margin-right: auto;
+    margin-left: auto;
+}
+.form-create-post {
+  max-width: 60rem;
+  -webkit-flex: 0 0 100%;
+  margin-right: auto;
+    margin-left: auto;
+}
+ol.menu-create-timeline li {
+  display: inline-block;
+  text-align: center;
+  font-weight: 400;
+  line-height: 4em;
+  margin-bottom: 7rem;
+  width: 25%;
+}
+.required {
+  color : red
+}
+ol.menu-create-timeline li:before {
+  position: relative;
+  font-size: 2em;
+  bottom: -1.6em;
+  float: left;
+  left: 50%;
+  line-height: 1em;
+}
+    ol.menu-create-timeline li.listyourplace {
+      border-bottom: 4px solid #00af9e;
+      color: #00af9e;
+      width: 25%;
+    }
+    ol.menu-create-timeline li.listyourplace:before {
+      content: "\f022"; /* FontAwesome Unicode */
+      font-family: FontAwesome;
+      color: #00af9e;
+      background-color: #ffffff;
+    }
+    ol.menu-create-timeline li.listyourplacetodo {
+      border-bottom: 4px solid #95a5b1;
+      color: #95a5b1;
+      width: 25%;
+    }
+    ol.menu-create-timeline li.listyourplacetodo:before {
+      content: "\f015"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+      color: #95a5b1;
+      background-color: #ffffff;
+    }
+
+    ol.menu-create-timeline li.adddetails {
+      border-bottom: 4px solid #00af9e;
+      color: #00af9e;
+      width: 25%;
+    }
+    ol.menu-create-timeline li.adddetails:before {
+      content: "\f022"; /* FontAwesome Unicode */
+      font-family: FontAwesome;
+      color: #00af9e;
+      background-color: #ffffff;
+    }
+    ol.menu-create-timeline li.adddetailstodo {
+      border-bottom: 4px solid #95a5b1;
+      color: #95a5b1;
+      width: 25%;
+    }
+    ol.menu-create-timeline li.adddetailstodo:before {
+      content: "\f015"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+      color: #95a5b1;
+      background-color: #ffffff;
+    }
+
+    ol.menu-create-timeline li.verifyyouraccount {
+      border-bottom: 4px solid #00af9e;
+      color: #00af9e;
+      width: 25%;
+    }
+    ol.menu-create-timeline li.verifyyouraccount:before {
+      content: "\f022"; /* FontAwesome Unicode */
+      font-family: FontAwesome;
+      color: #00af9e;
+      background-color: #ffffff;
+    }
+    ol.menu-create-timeline li.verifyyouraccounttodo {
+      border-bottom: 4px solid #95a5b1;
+      color: #95a5b1;
+      width: 25%;
+    }
+    ol.menu-create-timeline li.verifyyouraccounttodo:before {
+      content: "\f015"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+      color: #95a5b1;
+      background-color: #ffffff;
+    }
+
+    ol.menu-create-timeline li.sharepromote {
+      border-bottom: 4px solid #00af9e;
+      color: #00af9e;
+      width: 25%;
+    }
+    ol.menu-create-timeline li.sharepromote:before {
+      content: "\f022"; /* FontAwesome Unicode */
+      font-family: FontAwesome;
+      color: #00af9e;
+      background-color: #ffffff;
+    }
+    ol.menu-create-timeline li.sharepromotetodo {
+      border-bottom: 4px solid #95a5b1;
+      color: #95a5b1;
+      width: 25%;
+    }
+    ol.menu-create-timeline li.sharepromotetodo:before {
+      content: "\f015"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+      color: #95a5b1;
+      background-color: #ffffff;
+    }
+
+.mat-icon {
+  font-family: 'Material Icons' !important;
+}
+.select-kind:hover {
+  border: 1px #00af9e solid;
+}
+.form-create-detail {
+  max-width: 120rem;
+  -webkit-flex: 0 0 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.form-create-detail .picture {
+  height: 20rem;
+  width: 80%;
+  display: flex;
+  justify-content : center;
+  margin: auto;
+  border: 2px dashed rgba(0,0,0,.3);
+}
+.form-create-detail .picture .upload-photo {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: #007267; 
+}
+.form-create-detail .picture .inline-block {
+  display: inline-block;
+  margin: 0 1rem 0 1rem;
+}  
+.span-picture {
+  margin-top: 8rem
+} 
