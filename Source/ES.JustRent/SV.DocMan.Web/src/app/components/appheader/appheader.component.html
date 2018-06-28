@@ -14,11 +14,27 @@
         </li>
       </ul>
       <ul class="navbar-nav nav-flex-icons ml-auto ie-double-nav">
-        <li class="nav-item waves-light" >
+        <li class="nav-item waves-light" *ngIf="!isLogin">
           <a class="nav-link">Sign up</a>
         </li>
-        <li class="nav-item waves-light" >
+        <li class="nav-item waves-light" *ngIf="!isLogin">
           <a class="nav-link">Log in</a>
+        </li>
+        <li class="nav-item waves-light" *ngIf="isLogin">
+          <a class="nav-link"><i class="fa fa-comments"></i></a>
+        </li>
+        <li class="nav-item waves-light" *ngIf="isLogin">
+          <a class="nav-link"><i class="fa fa-search"></i></a>
+        </li>
+        <li class="nav-item dropdown btn-group" dropdown *ngIf="isLogin">
+          <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            <img src="https://www.drupal.org/files/issues/default-avatar.png" class="rounded-circle" alt="User avatar" width="30" height="30">
+            Username 
+          </a>
+          <div class="dropdown-menu dropdown-primary dropdown-menu-right" role="menu">
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">Vietnamese</a>
+          </div>
         </li>
         <li class="nav-item waves-light">
           <button type="button" class="btn btn-outline-success" mdbWavesEffect style="margin-top: -3px;">
@@ -27,11 +43,11 @@
         </li>
         <li class="nav-item dropdown btn-group" dropdown>
           <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-              EN
+            EN
           </a>
           <div class="dropdown-menu dropdown-primary dropdown-menu-right" role="menu">
-              <a class="dropdown-item" href="#">English</a>
-              <a class="dropdown-item" href="#">Vietnamese</a>
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">Vietnamese</a>
           </div>
         </li>
       </ul>
@@ -52,7 +68,7 @@
               </form>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>

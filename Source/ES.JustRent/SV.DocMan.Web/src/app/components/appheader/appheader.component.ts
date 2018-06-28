@@ -11,9 +11,12 @@ export class AppheaderComponent implements OnInit {
 
   userName: string;
   optionsSelect: Array<any>;
+  isLogin: boolean;
+
   constructor(private storageService: UserInfoStorageService, private _router: Router) { }
   
   ngOnInit() {
+    this.isLogin = true;
     this.userName  = this.storageService.getUserName();
     this.optionsSelect = [
       { value: '1', label: 'Option 1' },
@@ -24,6 +27,7 @@ export class AppheaderComponent implements OnInit {
 
   signOut(): void {
     this.storageService.clearStoreage();
+    this.isLogin = false;
     this._router.navigate(['/login']);
   }
 }

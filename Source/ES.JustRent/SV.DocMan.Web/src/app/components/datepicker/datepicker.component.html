@@ -1,0 +1,31 @@
+<div class="datepicker">
+  <div class="Input">
+    <input type="text" class="Input-field" value="{{result}}" [ngClass]="{ 'ng-not-empty': result }" (click)="onShowCalendar($event)"
+      (focus)="onShowCalendar($event)" />
+    <label class="Input-label">{{ label }}</label>
+    <div class="date" [ngClass]="{ 'isActive': showCalendar }">
+      <div class="month-container Grid Grid--spaceBetween Grid--alignCenter u-paddingVertical-xs">
+        <i class="fa fa-chevron-left text--14px u-marginLeft-xs Btn--pointer" (click)="updateMonth($event, 'dec')"></i>
+        <div class="Grid">
+          <span class="month">{{ months[month] }}</span>
+          <span class="u-marginLeft-xs blue--dark">{{ year }}</span>
+        </div>
+        <i class="fa fa-chevron-right text--14px u-marginRight-xs Btn--pointer" (click)="updateMonth($event, 'inc')"></i>
+      </div>
+      <div class="week-container Grid">
+        <span class="week">Sun</span>
+        <span class="week">Mon</span>
+        <span class="week">Tue</span>
+        <span class="week">Wed</span>
+        <span class="week">Thu</span>
+        <span class="week">Fri</span>
+        <span class="week">Sat</span>
+      </div>
+      <div class="Grid Grid--wrap day-container">
+        <span class="day Btn--pointer" *ngFor="let day of days" [ngClass]="{ 'isSelected': day === date.getDate() }" (click)="selectDay(day)">
+          {{ day }}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
