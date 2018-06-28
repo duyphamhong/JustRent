@@ -6,9 +6,12 @@
 <router-outlet></router-outlet>-->
 
   <!-- Main content -->
+<app-appheader></app-appheader>
 <router-outlet>
   <div class="wrapper">
   </div>
 </router-outlet>
 
 <div *ngIf="isLoading()" class="loader">Loading...</div>
+
+<app-appfooter></app-appfooter>

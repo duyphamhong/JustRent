@@ -47,8 +47,8 @@ export class CreateComponent implements OnInit {
       value : 1,
       viewValue : "hihi"
     }]
-    public isHidden = false;
-    public isCreateNewPost = true;
+    public isHidden = true;
+    public isCreateNewPost = false;
     public filePhoto:any;
     date3: Date;
   constructor() { }
