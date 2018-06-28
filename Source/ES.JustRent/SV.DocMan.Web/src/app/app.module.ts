@@ -21,7 +21,6 @@ const RxJS_Services = [HttpEventLoadingInterceptor, HTTPStatus];
 @NgModule({
   declarations: [
     AppComponent,
-    
   ],
   imports: [
     BrowserModule,

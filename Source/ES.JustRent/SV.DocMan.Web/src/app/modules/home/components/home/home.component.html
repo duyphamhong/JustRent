@@ -6,70 +6,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-
-        <!--Card-->
-        <div class="card">
-
-          <!--Card image-->
-          <div class="view hm-white-slight waves-light" mdbWavesEffect>
-            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
-            <a>
-              <div class="mask"></div>
-            </a>
-          </div>
-
-          <!--Card content-->
-          <div class="card-body">
-            <!--Title-->
-            <h4 class="card-title">Card title</h4>
-            <!--Text-->
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
-          </div>
-
-        </div>
-        <!--/.Card-->
-
+        <app-datepicker [value]="today" label="Estimated Date" (update)="onDateUpdate($event)"></app-datepicker>
+        <pre>
+          Selected date {{ date }}
+        </pre>
       </div>
-      <div class="col-md-8">
-        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary waves-light" mdbWavesEffect>Primary</button>
-
-        <!-- Default button -->
-        <button type="button" class="btn btn-default waves-light" mdbWavesEffect>Default</button>
-
-        <!-- Secondary button -->
-        <button type="button" class="btn btn-secondary waves-light" mdbWavesEffect>Secondary</button>
-
-        <!-- Indicates a successful or positive action -->
-        <button type="button" class="btn btn-success waves-light" mdbWavesEffect>Success</button>
-
-        <!-- Contextual button for informational alert messages -->
-        <button type="button" class="btn btn-info waves-light" mdbWavesEffect>Info</button>
-
-        <!-- Indicates caution should be taken with this action -->
-        <button type="button" class="btn btn-warning waves-light" mdbWavesEffect>Warning</button>
-
-        <!-- Indicates a dangerous or potentially negative action -->
-        <button type="button" class="btn btn-danger waves-light" mdbWavesEffect>Danger</button>
-      </div>
-    </div>
-    <div class="row">
-      <button type="button" class="btn btn-primary waves-light" mdbTooltip="Tooltip on top" placement="top" mdbWavesEffect>
-        Tooltip on top
-      </button>
-
-      <button type="button" class="btn btn-primary waves-light" mdbTooltip="Tooltip on right" placement="right" mdbWavesEffect>
-        Tooltip on right
-      </button>
-
-      <button type="button" class="btn btn-primary waves-light" mdbTooltip="Tooltip on bottom" placement="bottom" mdbWavesEffect>
-        Tooltip on bottom
-      </button>
-
-      <button type="button" class="btn btn-primary waves-light" mdbTooltip="Tooltip on left" placement="left" mdbWavesEffect>
-        Tooltip on left
-      </button>
     </div>
   </div>
 

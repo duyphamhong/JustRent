@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  date: string;
+  today: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.today = new Date().toDateString();
+  }
+
+  onDateUpdate(date: string): void {
+    this.date = date;
   }
 
 }
