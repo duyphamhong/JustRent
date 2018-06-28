@@ -6,6 +6,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SystemManagementModule } from './../system-management/system-management.module';
 import { CreateDetailComponent } from './components/create-detail/create-detail.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { TimelineComponent } from './components/timeline/timeline.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -15,7 +16,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     ReactiveFormsModule,
     FormsModule
   ],
-  declarations: [CreateComponent, CreateDetailComponent],
+  declarations: [CreateComponent, CreateDetailComponent, TimelineComponent],
   bootstrap: [CreateComponent],
   schemas : [NO_ERRORS_SCHEMA]
 })

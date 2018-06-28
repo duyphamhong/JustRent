@@ -1,20 +1,20 @@
 body {
   margin-top: 70px;
-  background: #eaeff3;
+  // background: #eaeff3;
 }
 ol.menu-create-timeline {
   text-align: center;
   list-style: none;
   max-width: 120rem;
-  width: 70%;
-  margin-right: auto;
+  width: 75%;
+  margin-right: 14%;
     margin-left: auto;
 }
 .form-create-post {
   max-width: 65rem;
   -webkit-flex: 0 0 100%;
   margin-right: auto;
-  width: 70%;
+  width: 50%;
     margin-left: auto;
 }
 ol.menu-create-timeline li {
@@ -35,14 +35,14 @@ ol.menu-create-timeline li:before {
   line-height: 1em;
 }
     ol.menu-create-timeline li.listyourplace {
-      border-bottom: 4px solid #00af9e;
-      color: #00af9e;
+      border-bottom: 4px solid #660066;
+      color: #660066;
       width: 25%;
     }
     ol.menu-create-timeline li.listyourplace:before {
       content: "\f022"; /* FontAwesome Unicode */
       font-family: FontAwesome;
-      color: #00af9e;
+      color: #660066;
       background-color: #ffffff;
     }
     ol.menu-create-timeline li.listyourplacetodo {
@@ -58,14 +58,14 @@ ol.menu-create-timeline li:before {
     }
 
     ol.menu-create-timeline li.adddetails {
-      border-bottom: 4px solid #00af9e;
-      color: #00af9e;
+      border-bottom: 4px solid #660066;
+      color: #660066;
       width: 25%;
     }
     ol.menu-create-timeline li.adddetails:before {
       content: "\f022"; /* FontAwesome Unicode */
       font-family: FontAwesome;
-      color: #00af9e;
+      color: #660066;
       background-color: #ffffff;
     }
     ol.menu-create-timeline li.adddetailstodo {
@@ -81,14 +81,14 @@ ol.menu-create-timeline li:before {
     }
 
     ol.menu-create-timeline li.verifyyouraccount {
-      border-bottom: 4px solid #00af9e;
-      color: #00af9e;
+      border-bottom: 4px solid #660066;
+      color: #660066;
       width: 25%;
     }
     ol.menu-create-timeline li.verifyyouraccount:before {
       content: "\f022"; /* FontAwesome Unicode */
       font-family: FontAwesome;
-      color: #00af9e;
+      color: #660066;
       background-color: #ffffff;
     }
     ol.menu-create-timeline li.verifyyouraccounttodo {
@@ -104,14 +104,14 @@ ol.menu-create-timeline li:before {
     }
 
     ol.menu-create-timeline li.sharepromote {
-      border-bottom: 4px solid #00af9e;
-      color: #00af9e;
+      border-bottom: 4px solid #660066;
+      color: #660066;
       width: 25%;
     }
     ol.menu-create-timeline li.sharepromote:before {
       content: "\f022"; /* FontAwesome Unicode */
       font-family: FontAwesome;
-      color: #00af9e;
+      color: #660066;
       background-color: #ffffff;
     }
     ol.menu-create-timeline li.sharepromotetodo {
@@ -130,7 +130,7 @@ ol.menu-create-timeline li:before {
   font-family: 'Material Icons' !important;
 }
 .select-kind:hover {
-  border: 1px #00af9e solid;
+  border: 1px #660066 solid;
 }
 .form-create-detail {
   max-width: 120rem;

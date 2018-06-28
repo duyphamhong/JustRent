@@ -1,21 +1,8 @@
-<body>
 <div>
-  <div>
-    <ol class="menu-create-timeline" >
-    <li [ngClass]="{'listyourplace' : Listyourplace.check == true,
-    'listyourplacetodo' : Listyourplace.check == false}">{{Listyourplace.name}}</li>
-    <li [ngClass]="{'adddetails' : Adddetails.check == true,
-    'adddetailstodo' : Adddetails.check == false}">{{Adddetails.name}}</li>
-    <li [ngClass]="{'verifyyouraccount' : Verifyyouraccount.check == true,
-    'verifyyouraccounttodo' : Verifyyouraccount.check == false}">{{Verifyyouraccount.name}}</li>
-    <li [ngClass]="{'sharepromote' : Sharepromote.check == true,
-    'sharepromotetodo' : Sharepromote.check == false}">{{Sharepromote.name}}</li>
-  </ol>
-</div>
-<div>
+<app-timeline></app-timeline>
 <form class="form-create-post"  *ngIf="isCreateNewPost">
     <div class="form-group col-md-12" >
-          <label for="name">What kind of place are you listing? <span class="required">*</span></label>
+          <label class="label" for="name">What kind of place are you listing? <span class="required">*</span></label>
           <select class="form-control" name="kind" id='kind'>
             <option value="" selected disabled>Select kind</option>
             <option *ngFor="let kind of kinds" [value]="kind.value">{{ kind.viewValue }}</option>
@@ -26,39 +13,23 @@
             </select>   -->
     </div>
     <div class="form-group col-md-12">
-            <label for="alterEgo">What type of property is this? <span class="required">*</span></label>
+            <label class="label" for="alterEgo">What type of property is this? <span class="required">*</span></label>
             <select class="form-control" name="kind" id='kind'>
               <option value="" selected disabled>Select kind</option>
               <option *ngFor="let kind of kinds" [value]="kind.value">{{ kind.viewValue }}</option>
             </select> 
     </div>
-    <div class="form-group col-md-12">
-            <label for="name">Your room address (including house number <span class="required">*</span></label>
-            <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="display-flex">
-          <div class="col-md-6">
-              <label for="date-picker-example">Start Date</label>
-          </div>
-          <div class="col-md-6">
-              <label for="date-picker-example">End Date</label>
-          </div>
-        </div>
       <div class="display-flex">
-        <div class="col-md-6">
-            <input placeholder="Move-in date" type="text" id="date-picker-example" class="form-control datepicker">
+          <div class="col-md-5">
+            <app-datepicker lable="Move-in date" (update)="onDateUpdate($event)"></app-datepicker>
         </div>
-        <div class="col-md-6">
-            <input placeholder="Move-out date" type="text" id="date-picker-example" class="form-control datepicker">
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <app-datepicker lable="Move-out date" (update)="onDateUpdate($event)"></app-datepicker>
         </div>
       </div>
         <div class="form-group col-md-6">
-            <button type="submit" class="btn btn-success">Continue next step</button>
+            <button type="submit" (click)="goToNextStep()" class="btn fa-violet">Continue next step</button>
         </div>
   </form>
 </div>
-  <div *ngIf="isHidden">
-    <app-create-detail [emp]='isHidden'></app-create-detail>
-  </div>
-</div>
-</body>

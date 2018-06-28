@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-detail',
@@ -6,8 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./create-detail.component.scss']
 })
 export class CreateDetailComponent implements OnInit {
-  @Input () emp : true;
-  constructor() { }
+  @Input () emp  = true;
+  constructor(private _router: Router) { }
 
   ngOnInit() {
   }
@@ -15,6 +16,8 @@ export class CreateDetailComponent implements OnInit {
     document.getElementById('filePhoto').click();
   }
   fileChanged(e) {
-   
+  }
+  goToBack() {
+    this._router.navigate(['/roomforrent/create']);
   }
 }
