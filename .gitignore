@@ -165,6 +165,7 @@ Source/DocumentManagementProject/SV.DocumentManagement/WebApplication1/obj/Debug
 Source/DocumentManagementProject/SV.DocumentManagement/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Views/Home/Contact.g.cshtml.cs
 Source/DocumentManagementProject/SV.DocumentManagement/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Views/Home/About.g.cshtml.cs
 Source/DocumentManagementProject/SV.DocumentManagement/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/_ViewStart.g.cshtml.cs
+<<<<<<< HEAD
 Source/ES.JustRent/SV.DocMan.WebApi/obj/ES.JustRent.WebApi.csproj.nuget.cache
 Source/ES.JustRent/SV.DocMan.WebApi/obj/Debug/netcoreapp2.1/ES.JustRent.WebApi.csproj.CoreCompileInputs.cache
 Source/ES.JustRent/SV.DocMan.WebApi/obj/Debug/netcoreapp2.1/ES.JustRent.WebApi.assets.cache
@@ -224,3 +225,19 @@ Source/ES.JustRent/SV.BusinessLogic/bin/Debug/netcoreapp2.1/ES.JustRent.Common.p
 Source/ES.JustRent/SV.BusinessLogic/bin/Debug/netcoreapp2.1/ES.JustRent.Common.dll
 Source/ES.JustRent/SV.BusinessLogic/bin/Debug/netcoreapp2.1/ES.JustRent.BusinessLogic.pdb
 Source/ES.JustRent/SV.BusinessLogic/bin/Debug/netcoreapp2.1/ES.JustRent.BusinessLogic.dll
+=======
+Source/ES.JustRent/SV.DocMan.Web/node_modules
+Source/SV.DocumentManagement
+Source/ES.JustRent/SV.DocMan.WebApi/obj
+Source/ES.JustRent/SV.DocMan.Web/wwwroot
+Source/ES.JustRent/SV.DocMan.WebApi/bin
+Source/ES.JustRent/SV.DocMan.Web/obj
+Source/ES.JustRent/SV.DocMan.Web/bin
+Source/ES.JustRent/SV.DataAccess/obj
+Source/ES.JustRent/SV.DataAccess/bin
+Source/ES.JustRent/SV.Common/obj
+Source/ES.JustRent/SV.Common/bin
+Source/ES.JustRent/SV.BusinessLogic/obj
+Source/ES.JustRent/SV.BusinessLogic/bin
+Source/ES.JustRent/SV.DocMan.WebApi/Properties/PublishProfiles/FolderProfile.pubxml
+>>>>>>> 0b9378a1ccae32053e0e4faf20f053254e785d16

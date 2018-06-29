@@ -7,6 +7,10 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="1.50.5" />
+<<<<<<< HEAD
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1" />
+=======
+>>>>>>> ae35ed45e69f0a1dec134c8fc0d554c01b8dc1ce
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
