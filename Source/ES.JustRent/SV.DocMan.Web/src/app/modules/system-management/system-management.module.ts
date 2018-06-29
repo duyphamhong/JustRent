@@ -10,6 +10,7 @@ import { AppmenuComponent } from '../../components/appmenu/appmenu.component';
 import { AppsettingComponent } from '../../components/appsetting/appsetting.component';
 import { OrgnizationComponent } from './components/orgnization/orgnization.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { DatepickerComponent } from '../../components/datepicker/datepicker.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -23,14 +24,16 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     AppfooterComponent,
     AppmenuComponent,
     AppsettingComponent,
-    OrgnizationComponent
+    OrgnizationComponent,
+    DatepickerComponent
   ],
   exports: [
     CommonModule,
     AppheaderComponent,
     AppfooterComponent,
     AppmenuComponent,
-    MDBBootstrapModule
+    MDBBootstrapModule,
+    DatepickerComponent
   ],
   schemas: [ NO_ERRORS_SCHEMA ]
 })
