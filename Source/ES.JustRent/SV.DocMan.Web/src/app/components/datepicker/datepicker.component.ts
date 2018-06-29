@@ -45,15 +45,21 @@ export class DatepickerComponent implements OnInit {
       this.month = 0;
       this.year++;
     }
-    const date = new Date(this.year, this.month, 0);
+    // get last day of the month
+    const date = new Date(this.year, this.month + 1, 0);
+    // get number of days in the month
     const days = date.getDate();
-    const day = date.getDay();
+    // get first day of month
+    const firstDay = new Date(this.year, this.month, 1);
+    // get day of the week of firstDay
+    const day = firstDay.getDay();
     const prefix = new Array(day);
 
     const arrayDate = [];
     for (let i = 0; i<days; i++) {
       arrayDate[i] = i + 1;
     }
+
     this.days = prefix.concat(arrayDate);
   }
 
