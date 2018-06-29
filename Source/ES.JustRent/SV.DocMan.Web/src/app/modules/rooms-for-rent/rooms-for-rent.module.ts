@@ -2,92 +2,21 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CreateComponent } from './components/create/create.component';
 import { RoomsForRentRoutingModule } from './rooms-for-rent-routing.module';
-import {
-  MatAutocompleteModule,
-  MatBadgeModule,
-  MatBottomSheetModule,
-  MatButtonModule,
-  MatButtonToggleModule,
-  MatCardModule,
-  MatCheckboxModule,
-  MatChipsModule,
-  MatDatepickerModule,
-  MatDialogModule,
-  MatDividerModule,
-  MatExpansionModule,
-  MatGridListModule,
-  MatIconModule,
-  MatInputModule,
-  MatListModule,
-  MatMenuModule,
-  MatNativeDateModule,
-  MatPaginatorModule,
-  MatProgressBarModule,
-  MatProgressSpinnerModule,
-  MatRadioModule,
-  MatRippleModule,
-  MatSelectModule,
-  MatSidenavModule,
-  MatSliderModule,
-  MatSlideToggleModule,
-  MatSnackBarModule,
-  MatSortModule,
-  MatStepperModule,
-  MatTableModule,
-  MatTabsModule,
-  MatToolbarModule,
-  MatTooltipModule,
-  MatTreeModule
-} from '@angular/material';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { SystemManagementModule } from './../system-management/system-management.module';
 import { CreateDetailComponent } from './components/create-detail/create-detail.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { TimelineComponent } from './components/timeline/timeline.component';
 @NgModule({
   imports: [
     CommonModule,
     MDBBootstrapModule,
     RoomsForRentRoutingModule,
-    MatAutocompleteModule,
-    MatBadgeModule,
-    MatBottomSheetModule,
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatCardModule,
-    MatCheckboxModule,
-    MatChipsModule,
-    MatDatepickerModule,
-    MatDialogModule,
-    MatDividerModule,
-    MatExpansionModule,
-    MatGridListModule,
-    MatIconModule,
-    MatInputModule,
-    MatListModule,
-    MatMenuModule,
-    MatNativeDateModule,
-    MatPaginatorModule,
-    MatProgressBarModule,
-    MatProgressSpinnerModule,
-    MatRadioModule,
-    MatRippleModule,
-    MatSelectModule,
-    MatSidenavModule,
-    MatSliderModule,
-    MatSlideToggleModule,
-    MatSnackBarModule,
-    MatSortModule,
-    MatStepperModule,
-    MatTableModule,
-    MatTabsModule,
-    MatToolbarModule,
-    MatTooltipModule,
-    MatTreeModule,
     SystemManagementModule,
-    OwlDateTimeModule, 
-    OwlNativeDateTimeModule
+    ReactiveFormsModule,
+    FormsModule
   ],
-  declarations: [CreateComponent, CreateDetailComponent],
+  declarations: [CreateComponent, CreateDetailComponent, TimelineComponent],
   bootstrap: [CreateComponent],
   schemas : [NO_ERRORS_SCHEMA]
 })

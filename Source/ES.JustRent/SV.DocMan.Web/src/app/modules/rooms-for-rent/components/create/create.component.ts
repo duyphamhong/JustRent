@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { } from '@angular/material/icon/';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-create',
   templateUrl: './create.component.html',
   styleUrls: ['./create.component.scss']
 })
 export class CreateComponent implements OnInit {
-  dateOptionsSelect= [
+  dateOptionsSelect = [
     { value: '1', label: 'Today', selected: true },
     { value: '2', label: 'Yesterday' },
     { value: '3', label: 'Last 7 days' },
@@ -15,44 +16,24 @@ export class CreateComponent implements OnInit {
     { value: '6', label: 'Last month' }
     ];
     selectedValue = '1';
-  public Listyourplace: any = 
-    {
-      "name": "List your place",
-      "check" : true
-    };
-    public Adddetails: any = 
-    {
-      "name": "Add details",
-      "check" : false
-    };
-    public Verifyyouraccount: any = 
-    {
-      "name": "Verify your account",
-      "check" : false
-    };
-    public Sharepromote: any = 
-    {
-      "name": "Share & promote",
-      "check" : false
-    };
-    public kinds : any[] = [{
+    public kinds = [{
       value : 1,
-      viewValue : "hihi"
-    },
-    {
+      viewValue : 'hihi'
+    }, {
       value : 1,
-      viewValue : "hihi"
-    },
-    {
+      viewValue : 'hihi'
+    }, {
       value : 1,
-      viewValue : "hihi"
-    }]
+      viewValue : 'hihi'
+    }];
     public isHidden = false;
     public isCreateNewPost = true;
-    public filePhoto:any;
-    date3: Date;
-  constructor() { }
+    public filePhoto;
+  constructor(private _router: Router) { }
 
   ngOnInit() {
+  }
+  goToNextStep() {
+    this._router.navigate(['/roomforrent/create-detail']);
   }
 }

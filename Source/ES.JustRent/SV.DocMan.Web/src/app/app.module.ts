@@ -54,6 +54,7 @@ const RxJS_Services = [HttpEventLoadingInterceptor, HTTPStatus];
       multi: true
     }
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,14 @@
+<div>
+  <div>
+    <ol class="menu-create-timeline" >
+    <li [ngClass]="{'listyourplace' : Listyourplace.check == true,
+    'listyourplacetodo' : Listyourplace.check == false}">{{Listyourplace.name}}</li>
+    <li [ngClass]="{'adddetails' : Adddetails.check == true,
+    'adddetailstodo' : Adddetails.check == false}">{{Adddetails.name}}</li>
+    <li [ngClass]="{'verifyyouraccount' : Verifyyouraccount.check == true,
+    'verifyyouraccounttodo' : Verifyyouraccount.check == false}">{{Verifyyouraccount.name}}</li>
+    <li [ngClass]="{'sharepromote' : Sharepromote.check == true,
+    'sharepromotetodo' : Sharepromote.check == false}">{{Sharepromote.name}}</li>
+  </ol>
+</div>
+</div>

@@ -7,6 +7,7 @@ import { SystemManagemenetComponent } from './system-managemenet.component';
 import { AppheaderComponent } from '../../components/appheader/appheader.component';
 import { AppfooterComponent } from '../../components/appfooter/appfooter.component';
 import { AppmenuComponent } from '../../components/appmenu/appmenu.component';
+import { DatepickerComponent } from '../../components/datepicker/datepicker.component';
 import { AppsettingComponent } from '../../components/appsetting/appsetting.component';
 import { OrgnizationComponent } from './components/orgnization/orgnization.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
@@ -23,6 +24,7 @@ import { DatepickerComponent } from '../../components/datepicker/datepicker.comp
     AppheaderComponent,
     AppfooterComponent,
     AppmenuComponent,
+    DatepickerComponent,
     AppsettingComponent,
     OrgnizationComponent,
     DatepickerComponent

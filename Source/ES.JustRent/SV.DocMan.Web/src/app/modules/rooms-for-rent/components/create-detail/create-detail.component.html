@@ -1,9 +1,11 @@
+<div>
+        <app-timeline></app-timeline>
 <div  class="form-create-detail"  *ngIf='emp'>
-  <div class="picture">
+  <div class="picture col-md-12">
     <span class="span-picture">
-        <button type="submit" class="btn btn-success upload-photo inline-block" (click)="uploadPhoto()"><i class="fa fa-plus"></i> Upload Photo</button>
+        <button type="submit" class="btn btn-success upload-photo inline-block" (click)="uploadPhoto()">Upload Photo</button>
         <div class="inline-block">or</div>
-        <button type="submit" class="btn btn-success upload-photo inline-block" (click)="uploadPhoto()"><i class="fa fa-tag"></i> Upload Video</button>
+        <button type="submit" class="btn btn-success upload-photo inline-block" (click)="uploadPhoto()">Upload Video</button>
         <div style=" display: none !important;">
             <input  type="file" id="filePhoto" accept=".jpg/.png" (change)="handleFileInput($event.target.files)">
             <input  type="file" id="fileVideo" (change)="handleFileInput($event.target.files)">
@@ -12,9 +14,9 @@
   </div>
 </div>
   <div class="form-create-detail">
-      <div class="col-md-12 form-group" >
+      <div class="col-md-12 display-flex" >
         <div class="col-md-2">
-            <label class="label-fixed" for="name">Total size m2 <span class="required">*</span></label>
+            <label class="label" for="name">Total size m2 <span class="required">*</span></label>
         </div>
         <div class="col-md-3">
             <input type="number" class="form-control" id="name" required>
@@ -22,18 +24,22 @@
         <div class="col-md-1">
         </div>
         <div class="col-md-2">
-            <label class="label-fixed" for="name">Number of house <span class="required">*</span></label>
+            <label class="label" for="name">Number of house <span class="required">*</span></label>
         </div>
         <div class="col-md-3">
             <input type="number" class="form-control" id="name" required>
         </div>
       </div>
-      <div class="col-md-12 form-group" >
+      <div class="col-md-12 display-flex" >
           <div class="col-md-2">
-              <label class="label-fixed" for="name">Number of people <span class="required">*</span></label>
+              <label class="label" for="name">Number of people <span class="required">*</span></label>
           </div>
           <div class="col-md-3">
               <input type="number" class="form-control" id="name" required>
           </div>
         </div>
+        <div class="form-group col-md-7" style="text-align: right">
+            <button type="submit" (click)="goToBack()" class="btn fa-violet">Back</button>
+    </div>
+</div>
 </div>
