@@ -3,10 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\SV.Common\ES.JustRent.Common.csproj" />
-    <ProjectReference Include="..\SV.DataAccess\ES.JustRent.DataAccess.csproj" />
+ <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1" />
   </ItemGroup>
+ <ItemGroup>
+   <ProjectReference Include="..\SV.Common\ES.JustRent.Common.csproj" />
+   <ProjectReference Include="..\SV.DataAccess\ES.JustRent.DataAccess.csproj" />
+ </ItemGroup>
 
 </Project>

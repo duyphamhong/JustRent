@@ -7,12 +7,8 @@
   <ItemGroup>
     <Folder Include="Services\" />
   </ItemGroup>
-<<<<<<< HEAD
+
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1" />
-=======
-<ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1"/>
->>>>>>> ae35ed45e69f0a1dec134c8fc0d554c01b8dc1ce
   </ItemGroup>
 </Project>

@@ -23,7 +23,7 @@ namespace SV.DataAccess.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer(@"Server=HUNG\MSSQLSERVER2016;Database=PhoneBook;Persist Security Info=True;User ID=sa;Password=Password@123");
+                optionsBuilder.UseSqlServer(@"Server=.;Database=JustRent;Persist Security Info=True;User ID=sa;Password=123456");
             }
         }
 
@@ -47,16 +47,6 @@ namespace SV.DataAccess.Models
             modelBuilder.Entity<Users>(entity =>
             {
                 entity.Property(e => e.Id).HasColumnName("ID");
-
-                entity.Property(e => e.CreateDate).HasColumnType("datetime");
-
-                entity.Property(e => e.Password)
-                    .HasMaxLength(500)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.UserName)
-                    .HasMaxLength(150)
-                    .IsUnicode(false);
             });
         }
     }
