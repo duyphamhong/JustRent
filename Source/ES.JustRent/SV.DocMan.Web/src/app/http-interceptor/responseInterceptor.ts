@@ -9,13 +9,13 @@ export class ResponseInterceptor implements HttpInterceptor {
   constructor(private _router: Router) { }
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    //const started = Date.now();
-    //let ok: string;
+    // const started = Date.now();
+    // let ok: string;
     return next.handle(req)
       .pipe(
         tap(
           // Succeeds when there is a response; ignore other events
-          //event => ok = event instanceof HttpResponse ? 'succeeded' : '',
+          // event => ok = event instanceof HttpResponse ? 'succeeded' : '',
           // Operation failed; error is an HttpErrorResponse
          // error => ok = 'failed'
         ),
@@ -25,7 +25,7 @@ export class ResponseInterceptor implements HttpInterceptor {
             console.log(err.status);
             console.log(err.message);
             if (err.status === 401) {
-              alert("401 error");
+              alert('401 error');
               this._router.navigate(['/login']);
             }
           }
@@ -33,10 +33,10 @@ export class ResponseInterceptor implements HttpInterceptor {
         }),
         // Log when response observable either completes or errors
         finalize(() => {
-          //const elapsed = Date.now() - started;
-          //const msg = `${req.method} "${req.urlWithParams}"
+          // const elapsed = Date.now() - started;
+          //  onst msg = `${req.method} "${req.urlWithParams}"
           //   ${ok} in ${elapsed} ms.`;
-          //alert(msg);
+          // alert(msg);
         })
       );
   }

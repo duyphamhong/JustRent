@@ -26,7 +26,7 @@ export class CustomHttpInterceptor implements HttpInterceptor {
         'Authorization': `Bearer ${this.storeageService.getAccessToken()}`
       })
     });
-    //console.log(request);
+    console.log(request);
     return next.handle(request).pipe(
       finalize(() => {
         this.loadingService.onRequestFinished();
