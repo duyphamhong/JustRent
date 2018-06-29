@@ -5,7 +5,7 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
   templateUrl: './datepicker.component.html',
   styleUrls: ['./datepicker.component.scss'],
   host: {
-    '(document:click)': 'onCloseCalendar($event)'
+    '(document:click)': 'onCloseCalendar()'
   }
 })
 export class DatepickerComponent implements OnInit {
@@ -65,11 +65,11 @@ export class DatepickerComponent implements OnInit {
     this.update.emit(this.result);
   }
 
-  onShowCalendar(e: Event) {
+  onShowCalendar(e:Event) {
     e.stopPropagation();
     this.showCalendar = true;
   }
-  onCloseCalendar(e: Event) {
+  onCloseCalendar() {
     if (this.showCalendar) {
       this.showCalendar = false;
       this.update.emit(this.result);

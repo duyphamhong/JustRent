@@ -11,7 +11,6 @@ import { DatepickerComponent } from '../../components/datepicker/datepicker.comp
 import { AppsettingComponent } from '../../components/appsetting/appsetting.component';
 import { OrgnizationComponent } from './components/orgnization/orgnization.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { DatepickerComponent } from '../../components/datepicker/datepicker.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -26,8 +25,7 @@ import { DatepickerComponent } from '../../components/datepicker/datepicker.comp
     AppmenuComponent,
     DatepickerComponent,
     AppsettingComponent,
-    OrgnizationComponent,
-    DatepickerComponent
+    OrgnizationComponent
   ],
   exports: [
     CommonModule,
